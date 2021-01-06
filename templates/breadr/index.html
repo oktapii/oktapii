@@ -1,7 +1,21 @@
 {% extends 'breadr/layout.html' %}
 
-{% block body %}
+{% block header %}
+<div class="container h1">
+  Breadr
+</div>
+{% endblock %}
 
-<h1>Grr</h1>
+{% block main %}
+
+<div class="container px-4">
+    Bread Calculator
+</div>
+
+{% endblock %}
+
+{% block footer %}
+
+&copy {{ year }} oktapii
 
 {% endblock %}
