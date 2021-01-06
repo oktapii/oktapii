@@ -1,8 +1,10 @@
+from django.http import HttpResponseNotFound
 from django.shortcuts import render
-from django.http import HttpResponse
 
 # Create your views here.
 
 def index(request):
-    return HttpResponse("Breadr World")
+    return render(request, 'breadr/index.html')
 
+def err404(request, exception=None):
+    return HttpResponseNotFound('404.html')
